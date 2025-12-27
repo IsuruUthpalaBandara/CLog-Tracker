@@ -2,46 +2,60 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CLog Tracker</title>
 
   <link rel="stylesheet" href="style.css">
 
-  <!-- jsPDF CDN -->
+  <!-- jsPDF -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
 <body>
 
-  <div class="container">
-    <h1>CLog Tracker</h1>
-    <p class="subtitle">Daily Site Record Generator</p>
+<div class="container">
+  <h1>CLog Tracker</h1>
+  <p class="subtitle">Daily Site Record Generator</p>
 
-    <form id="logForm">
-      <label>Date</label>
-      <input type="date" id="date" required>
+  <form id="logForm">
 
-      <label>Project Name</label>
-      <input type="text" id="project" placeholder="Project name" required>
+    <label>Company Name</label>
+    <input type="text" id="company">
 
-      <label>Location</label>
-      <input type="text" id="location" placeholder="Site location">
+    <label>Project Name</label>
+    <input type="text" id="project">
 
-      <label>Weather</label>
-      <input type="text" id="weather" placeholder="Sunny / Rainy / Cloudy">
+    <label>Recorded by</label>
+    <input type="text" id="recordedBy">
 
-      <label>Manpower</label>
-      <textarea id="manpower" placeholder="No. of workers, supervisors..."></textarea>
+    <label>Designation</label>
+    <input type="text" id="designation">
 
-      <label>Work Description</label>
-      <textarea id="work" placeholder="Work carried out today"></textarea>
+    <label>Contact No</label>
+    <input type="tel" id="contact">
 
-      <label>Issues / Remarks</label>
-      <textarea id="remarks" placeholder="Delays, issues, instructions"></textarea>
+    <label>Date</label>
+    <input type="date" id="date" required>
 
-      <button type="button" onclick="generatePDF()">Generate PDF</button>
-    </form>
-  </div>
+    <label>Index No</label>
+    <input type="text" id="indexNo">
 
-  <script src="app.js"></script>
+    <label>Location</label>
+    <input type="text" id="location">
+
+    <label>Work Description</label>
+    <textarea id="work"></textarea>
+
+    <label>Remarks / Issues</label>
+    <textarea id="remarks"></textarea>
+
+    <label>Manpower & Machinery</label>
+    <textarea id="manpower"></textarea>
+
+    <button type="button" onclick="generatePDF()">Generate PDF</button>
+
+  </form>
+</div>
+
+<script src="app.js"></script>
 </body>
 </html>
