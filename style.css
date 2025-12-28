@@ -48,7 +48,7 @@ input, textarea {
 
 textarea {
   resize: vertical;
-  min-height: 70px;
+  min-height: 80px;
 }
 
 button {
@@ -66,4 +66,5 @@ button {
 button:hover {
   background: #0056b3;
 }
+
 
